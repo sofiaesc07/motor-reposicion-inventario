@@ -26,7 +26,7 @@ def atomic_csv(df, dest):
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
     tmp = dest.with_suffix(dest.suffix + ".tmp")
-    df.to_csv(tmp, index=False)
+    df.to_csv(tmp, index=False, lineterminator="\n")
     os.replace(tmp, dest)
 
 
