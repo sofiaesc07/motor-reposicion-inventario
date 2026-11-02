@@ -353,3 +353,11 @@ La solución trabaja con las ventas y características disponibles en el dataset
 https://github.com/sofiaesc07/motor-reposicion-inventario
 
 El repositorio contiene el código fuente, configuraciones, DAGs, pruebas automatizadas, archivos de seguimiento DVC, documentación y evidencias de funcionamiento.
+
+## 15. Almacenamiento de datos y modelos (DVC)
+
+Los archivos versionados con DVC están almacenados en Google Drive:
+
+[Acceder al almacenamiento DVC](https://drive.google.com/drive/folders/1A12QVBprY43fhtTgZKnqCUOaOWzyaACt)
+
+El repositorio incluye la configuración del remoto en `.dvc/config`. Los archivos originales también pueden obtenerse desde Kaggle siguiendo las instrucciones de reproducción de este README.
