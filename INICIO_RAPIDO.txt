@@ -1,0 +1,20 @@
+INICIO RÁPIDO (Windows PowerShell)
+1. Descomprime este ZIP.
+2. Abre PowerShell en la carpeta motor_reposicion_inventario.
+3. python -m venv .venv
+4. .\.venv\Scripts\Activate.ps1
+5. pip install -r requirements.txt
+6. python scripts/bootstrap_data.py datos_kaggle_original.zip
+7. $env:PYTHONPATH="src"
+8. python -m pytest -q
+9. python -m inventory.cli train --asof 2017-08-15
+10. python -m inventory.cli publish --asof 2017-08-15
+11. python scripts/create_inbox.py --days 35
+12. docker compose up --build -d
+13. Abre http://localhost:8080 y comprueba el DAG.
+
+IMPORTANTE: DVC requiere instalarse, configurar remoto compartido,
+versionar datos/modelos/pronósticos y ejecutar dvc push.
+GitHub/PR/reglas deben configurarse en la cuenta individual.
+Airflow y Docker no han podido ejecutarse en este entorno.
+Lee README.md y DECISIONES.md antes de entregar.

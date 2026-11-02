@@ -1,0 +1,6 @@
+outs:
+- md5: 6977c1fb3449b3aa73e713daa069f9c3.dir
+  size: 1288227
+  nfiles: 2
+  hash: md5
+  path: published

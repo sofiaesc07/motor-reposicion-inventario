@@ -1,0 +1,24 @@
+seed: 42
+horizon_days: 7
+history_window_days: 28
+validation_days: 28
+training_weeks: 24
+max_training_rows: 65000
+min_history_days: 35
+model:
+  max_iter: 110
+  max_leaf_nodes: 31
+  learning_rate: 0.09
+  min_samples_leaf: 35
+  l2_regularization: 1.0
+business:
+  stockout_cost: 5.0
+  overstock_cost: 1.0
+  # Without inventory/on-hand, orders represent target demand, not net replenishment.
+  inventory_available: 0
+sources:
+  train: train.csv
+  stores: stores.csv
+  oil: oil.csv
+  holidays: holidays_events.csv
+  transactions: transactions.csv
