@@ -1,0 +1,8 @@
+﻿{
+  "fecha_corte": "2017-08-01",
+  "publication": "forecast.csv",
+  "matched": 12474,
+  "total": 12474,
+  "mae": 87.42099218698857,
+  "coverage_10_90": 0.9108545775212442
+}
